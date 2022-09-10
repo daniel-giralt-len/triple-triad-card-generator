@@ -1,4 +1,7 @@
+import { useEffect, useState } from "react";
 import { createGlobalStyle } from "styled-components";
+import getCards from './csvReader'
+import Card from './Card'
 
 const GlobalStyle = createGlobalStyle`
   html {
@@ -18,10 +21,14 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 function App() {
+  const [cards, setCards] = useState([])
+  useEffect(() => {
+    getCards().then(cards => setCards(cards))
+  }, [])
   return (
     <>
       <GlobalStyle />
-      123456789
+      {cards.map(c=>(<Card {...c} />))}
     </>
   );
 }
