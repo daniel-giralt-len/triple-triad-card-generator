@@ -123,6 +123,13 @@ const Name = ({ name }) => (<NameWrapper>
     {name}
 </NameWrapper>)
 
+const SubWrapper = styled.div`
+    display: inline-block;
+    width: 450px;
+    height: 550px;
+    
+    background-size: cover;
+`
 
 const Wrapper = styled.div`
     width: 400px;
@@ -130,7 +137,7 @@ const Wrapper = styled.div`
     margin-bottom: 1em;
     margin-right: 1em;
     padding: 2.5em 2em;
-    background: url(${frameImage});
+    background: url(${frameImage}), url(./data/avatars/${({name})=>name.replace(/ /ig, '_')}.png);
     background-size: cover;
     display: inline-grid;
     column-gap: 0.25em;
@@ -150,7 +157,7 @@ const Card = ({
     rarity
 }) => {
     return (
-        <Wrapper>
+        <Wrapper name={name}>
             <Name name={name} />
             <Type type={type} />
             <Numbers
@@ -161,6 +168,7 @@ const Card = ({
             />
             <Stars n={rarity} />
         </Wrapper>
+        
     )
 }
 
