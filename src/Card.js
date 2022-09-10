@@ -120,7 +120,8 @@ const Wrapper = styled.div`
     width: 400px;
     height: 500px;
     padding: 0.5em;
-    /*background-image: ./assets/star.png;*/
+    background: url(${frameImage});
+    background-size: cover;
     display: grid;
     grid-template-areas:
         "rarity .      type   "
