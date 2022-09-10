@@ -107,8 +107,8 @@ const TypeWrapper = styled.div`
 const TypeImage = styled.img`
     width: 5.5em;
     object-fit: contain;
-    box-shadow: 0 0 0.5em #474747, 0 0 0.5em #474747, 0 0 0.5em #474747;
-    background: #474747CF;
+    box-shadow: 0 0 0.5em #474747, 0 0 0.5em #474747;
+    background: #474747C0;
     border-radius: 300px;
     padding: 3px;
 `
