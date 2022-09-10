@@ -38,13 +38,63 @@ const Numbers = ({ up,
     </NumbersSuperWrapper>
 )
 
+const starSize = '1.5em'
+const StarImage = styled.img`
+    width: ${starSize};
+    object-fit: contain;
+`
+const Star = () => (
+        <StarImage src={starImage} />
+)
+
+const genericStarGridStyle = `
+    display: grid;
+    grid-template-rows: ${starSize} ${starSize};
+`
+const BaseStarGrid = styled.div`
+    ${genericStarGridStyle}
+    grid-template-areas:
+        ".      .      .";
+`
+const FourStarGrid = styled.div`
+    ${genericStarGridStyle}
+    grid-template-areas:
+        ".      ."
+        ".      .";
+`
+const FiveStarGrid = styled.div`
+    ${genericStarGridStyle}
+    grid-template-areas:
+        ".      .      ."
+        ".      .      ."
+        ".      .      ."
+`
+
+const renderStars = n => {
+    if(n === 1){
+        return (<BaseStarGrid><Star /></BaseStarGrid>)
+    }
+    if(n === 2){
+        return (<BaseStarGrid><Star /><Star /></BaseStarGrid>)
+    }
+    if(n === 3){
+        return (<BaseStarGrid><Star /><Star /><Star /></BaseStarGrid>)
+    }
+    if(n === 4){
+        return (<FourStarGrid><Star /><Star /><Star /><Star /></FourStarGrid>)
+    }
+    if(n === 5){
+        return (<FiveStarGrid><Star /><Star /><Star /><Star /><Star /></FiveStarGrid>)
+    }
+}
+
 const StarsWrapper = styled.div`
     grid-area: rarity;
     display:flex;
 `
 const minStars = 1, maxStars = 5
 const Stars = ({ n }) => (<StarsWrapper>
-        {clamp(minStars,n,maxStars)}
+        {renderStars(clamp(minStars,n,maxStars))}
     </StarsWrapper>)
 
 const TypeWrapper = styled.div`
@@ -70,7 +120,7 @@ const Wrapper = styled.div`
     width: 400px;
     height: 500px;
     padding: 0.5em;
-    border: 1px solid black;
+    /*background-image: ./assets/star.png;*/
     display: grid;
     grid-template-areas:
         "rarity .      type   "

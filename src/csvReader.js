@@ -1,4 +1,4 @@
-import csvPath from './assets/cardList.csv'
+import csvPath from './data/cardList.csv'
 
 const parseCsv = csv => {
     const [header, ...cardLines] = csv.split('\n')
