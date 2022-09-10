@@ -23,3 +23,8 @@ L'aspecte d'aquestes imatges són d'un 1:1.
 ## 4. Generar les cartes
 
 Obre `index.html`
+
+# Vols canviar les estrelles o el marc?
+
+- Estrella: substitueix el fitxer: `assets/star.png`. Aspect ratio 4:5 (per exemple 800x1000px)
+- Marc: substitueix el fitxer: `assets/frame.png`. Aspect ratio 1:1 (per exemple 500x500px)

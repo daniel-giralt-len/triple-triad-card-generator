@@ -44,7 +44,7 @@ const StarImage = styled.img`
     object-fit: contain;
 `
 const Star = () => (
-        <StarImage src={starImage} />
+    <StarImage src={starImage} />
 )
 
 const genericStarGridStyle = `
@@ -101,9 +101,15 @@ const TypeWrapper = styled.div`
     grid-area: type;
     display:flex;
     justify-content: flex-end;
+    align-items: flex-start;
 `
+const TypeImage = styled.img`
+    width: 3em;
+    object-fit: contain;
+`
+
 const Type = ({ type }) => (<TypeWrapper>
-    {type}
+    <TypeImage src={`./data/types/${type}.png`} />
 </TypeWrapper>)
 
 const NameWrapper = styled.div`
@@ -119,6 +125,7 @@ const Name = ({ name }) => (<NameWrapper>
 const Wrapper = styled.div`
     width: 400px;
     height: 500px;
+    margin-bottom: 1em;
     padding: 0.5em;
     background: url(${frameImage});
     background-size: cover;
