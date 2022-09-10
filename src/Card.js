@@ -64,11 +64,8 @@ const FourStarGrid = styled.div`
         ".      .";
 `
 const FiveStarGrid = styled.div`
-    ${genericStarGridStyle}
-    grid-template-areas:
-        ".      .      ."
-        ".      .      ."
-        ".      .      ."
+display: flex;
+justify-content: center;
 `
 
 const renderStars = n => {
@@ -85,7 +82,16 @@ const renderStars = n => {
         return (<FourStarGrid><Star /><Star /><Star /><Star /></FourStarGrid>)
     }
     if(n === 5){
-        return (<FiveStarGrid><Star /><Star /><Star /><Star /><Star /></FiveStarGrid>)
+        return (
+            <div>
+            <FiveStarGrid>
+            <Star /><Star /><Star />
+            </FiveStarGrid>
+            <FiveStarGrid>
+            <Star /><Star />
+            </FiveStarGrid>
+            </div>
+        )
     }
 }
 
