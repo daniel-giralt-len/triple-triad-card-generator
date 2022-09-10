@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <GlobalStyle />
-      {cards.map(c=>(<Card {...c} />))}
+      {cards.map(c=>(<Card key={c.name} {...c} />))}
     </>
   );
 }
