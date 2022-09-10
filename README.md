@@ -1,5 +1,8 @@
 # Generador de cartes Triple Triad
 
+## 0. Baixa't el repositori
+![](./readme-img.png)
+
 ## 1. Agafar les cartes
 Cada carta ha d'estar en una línia d'un CSV amb aquests atributs en aquest ordre
 - Nom: apareix a sota a l'esquerra
