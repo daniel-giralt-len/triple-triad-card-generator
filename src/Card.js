@@ -39,7 +39,7 @@ const Numbers = ({ up,
     </NumbersSuperWrapper>
 )
 
-const starSize = '1.5em'
+const starSize = '2.5em'
 const StarImage = styled.img`
     width: ${starSize};
     object-fit: contain;
@@ -105,7 +105,7 @@ const TypeWrapper = styled.div`
     align-items: flex-start;
 `
 const TypeImage = styled.img`
-    width: 3em;
+    width: 5.5em;
     object-fit: contain;
 `
 
@@ -117,19 +117,11 @@ const NameWrapper = styled.div`
     grid-area: name;
     display:flex;
     align-items: flex-end;
-    font-size: 1.5em;
+    font-size: 1.75em;
 `
 const Name = ({ name }) => (<NameWrapper>
     {name}
 </NameWrapper>)
-
-const SubWrapper = styled.div`
-    display: inline-block;
-    width: 450px;
-    height: 550px;
-    
-    background-size: cover;
-`
 
 const Wrapper = styled.div`
     width: 400px;
