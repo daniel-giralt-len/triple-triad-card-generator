@@ -126,7 +126,7 @@ const Wrapper = styled.div`
     width: 400px;
     height: 500px;
     margin-bottom: 1em;
-    padding: 0.5em;
+    padding: 2.5em 2em;
     background: url(${frameImage});
     background-size: cover;
     display: grid;
@@ -135,7 +135,6 @@ const Wrapper = styled.div`
         ".      .      .      "
         "name   .      numbers";
 `
-
 
 const Card = ({
     name,
