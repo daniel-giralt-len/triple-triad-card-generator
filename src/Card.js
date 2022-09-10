@@ -10,6 +10,7 @@ const NumbersSuperWrapper = styled.div`
 `
 const NumbersWrapper = styled.div`
     font-size: 3em;
+
     display: grid;
     grid-template-columns: repeat(3, 1em);
     grid-template-rows: 0.4em 0.4em 1em;
@@ -116,6 +117,7 @@ const NameWrapper = styled.div`
     grid-area: name;
     display:flex;
     align-items: flex-end;
+    font-size: 1.5em;
 `
 const Name = ({ name }) => (<NameWrapper>
     {name}
@@ -126,10 +128,12 @@ const Wrapper = styled.div`
     width: 400px;
     height: 500px;
     margin-bottom: 1em;
+    margin-right: 1em;
     padding: 2.5em 2em;
     background: url(${frameImage});
     background-size: cover;
-    display: grid;
+    display: inline-grid;
+    column-gap: 0.25em;
     grid-template-areas:
         "rarity .      type   "
         ".      .      .      "

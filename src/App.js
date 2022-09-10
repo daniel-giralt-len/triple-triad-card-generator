@@ -16,6 +16,8 @@ const GlobalStyle = createGlobalStyle`
         url("//db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.ttf") format("truetype"),
         url("//db.onlinewebfonts.com/t/db8811fcaea2386d4f6e3bcf7e6d206b.svg#MiedingerW01-Bold") format("svg");
     }
+    color: #f5f6ff;
+    text-shadow: 0 0 0.5em #474747;
   }
   
 `;
