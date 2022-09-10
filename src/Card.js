@@ -2,6 +2,12 @@ import styled from 'styled-components'
 import frameImage from './assets/frame.png'
 import starImage from './assets/star.png'
 
+const NumbersSuperWrapper = styled.div`
+    grid-area: numbers;
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+`
 const NumbersWrapper = styled.div`
     font-size: 3em;
     display: grid;
@@ -22,24 +28,54 @@ const Numbers = ({ up,
     down,
     left,
     right, }) => (
-    <NumbersWrapper>
-        <div style={{ gridArea: 'up' }}>{clamp(minPower, up, maxPower)}</div>
-        <div style={{ gridArea: 'down' }}>{clamp(minPower, down, maxPower)}</div>
-        <div style={{ gridArea: 'left' }}>{clamp(minPower, left, maxPower)}</div>
-        <div style={{ gridArea: 'right' }}>{clamp(minPower, right, maxPower)}</div>
-    </NumbersWrapper>
+    <NumbersSuperWrapper>
+        <NumbersWrapper>
+            <div style={{ gridArea: 'up' }}>{clamp(minPower, up, maxPower)}</div>
+            <div style={{ gridArea: 'down' }}>{clamp(minPower, down, maxPower)}</div>
+            <div style={{ gridArea: 'left' }}>{clamp(minPower, left, maxPower)}</div>
+            <div style={{ gridArea: 'right' }}>{clamp(minPower, right, maxPower)}</div>
+        </NumbersWrapper>
+    </NumbersSuperWrapper>
 )
 
+const StarsWrapper = styled.div`
+    grid-area: rarity;
+    display:flex;
+`
 const minStars = 1, maxStars = 5
-const Stars = ({ n }) => clamp(minStars,n,maxStars)
+const Stars = ({ n }) => (<StarsWrapper>
+        {clamp(minStars,n,maxStars)}
+    </StarsWrapper>)
 
-const Type = ({ type }) => (type)
+const TypeWrapper = styled.div`
+    grid-area: type;
+    display:flex;
+    justify-content: flex-end;
+`
+const Type = ({ type }) => (<TypeWrapper>
+    {type}
+</TypeWrapper>)
+
+const NameWrapper = styled.div`
+    grid-area: name;
+    display:flex;
+    align-items: flex-end;
+`
+const Name = ({ name }) => (<NameWrapper>
+    {name}
+</NameWrapper>)
 
 
 const Wrapper = styled.div`
-    width: 800px;
-    height: 1000px;
+    width: 400px;
+    height: 500px;
+    padding: 0.5em;
     border: 1px solid black;
+    display: grid;
+    grid-template-areas:
+        "rarity .      type   "
+        ".      .      .      "
+        "name   .      numbers";
 `
 
 
@@ -54,7 +90,7 @@ const Card = ({
 }) => {
     return (
         <Wrapper>
-            {name}
+            <Name name={name} />
             <Type type={type} />
             <Numbers
                 up={up}
