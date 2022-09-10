@@ -25,6 +25,7 @@ function App() {
   useEffect(() => {
     getCards().then(cards => setCards(cards))
   }, [])
+  console.log(cards)
   return (
     <>
       <GlobalStyle />
