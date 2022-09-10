@@ -8,15 +8,15 @@ Cada carta ha d'estar en una línia d'un CSV amb aquests atributs en aquest ordr
 - Raresa: estrelles a dalt a l'esquerra. Va de l'1 al 5
 
 1. Si estàs fent servir sheets, exporta-la a csv: Arxiu > Descarregar > (.csv)
-2. Posa'l a `./data` com a `cardList.csv`
+2. Posa'l a `./build/static/media` com a `cardList......csv`
 
 ## 2. Posar les caràtules
-Per cada carta, cal posar una imatge .png amb el nom de la carta a data/avatars.
+Per cada carta, cal posar una imatge .png amb el nom de la carta a `build/data/avatars`.
 
 Les imatges han de fer un aspecte de 8 píxels d'ample per cada 10 píxels d'alt; potser les has de retallar amb un editor d'imatges
 
 ## 3. Posar els logos dels tipus
-Per a cada tipus, cal posar una imatge .png amb el seu nom a data/typeLogos.
+Per a cada tipus, cal posar una imatge .png amb el seu nom a `build/data/types`.
 
 L'aspecte d'aquestes imatges són d'un 1:1.
 
@@ -26,5 +26,5 @@ Obre `index.html`
 
 # Vols canviar les estrelles o el marc?
 
-- Estrella: substitueix el fitxer: `assets/star.png`. Aspect ratio 4:5 (per exemple 800x1000px)
-- Marc: substitueix el fitxer: `assets/frame.png`. Aspect ratio 1:1 (per exemple 500x500px)
+- Estrella: substitueix el fitxer: `build/static/media/star.......png`. Aspect ratio 4:5 (per exemple 800x1000px)
+- Marc: substitueix el fitxer: `build/static/media/frame.......png`. Aspect ratio 1:1 (per exemple 500x500px)

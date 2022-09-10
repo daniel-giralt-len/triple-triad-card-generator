@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/static/js/main.cb15962c.js",
+    "static/media/frame.png": "/static/media/frame.8cbcc0018e38ad53bc4d.png",
+    "static/media/star.png": "/static/media/star.76739df0910b62c12067.png",
+    "index.html": "/index.html",
+    "static/media/cardList.csv": "/static/media/cardList.efb329e5644b431a10e2.csv",
+    "main.cb15962c.js.map": "/static/js/main.cb15962c.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.cb15962c.js"
+  ]
+}
