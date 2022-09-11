@@ -23,6 +23,7 @@ const NumbersWrapper = styled.div`
 `
 
 const clamp = (min, num, max) => Math.min(Math.max(num, min), max);
+const cleanNumber = n => n > 9 ? 'A' : clamp(minPower, n, maxPower)
 
 const minPower = 1, maxPower = 9
 const Numbers = ({ up,
@@ -31,10 +32,10 @@ const Numbers = ({ up,
     right, }) => (
     <NumbersSuperWrapper>
         <NumbersWrapper>
-            <div style={{ gridArea: 'up' }}>{clamp(minPower, up, maxPower)}</div>
-            <div style={{ gridArea: 'down' }}>{clamp(minPower, down, maxPower)}</div>
-            <div style={{ gridArea: 'left' }}>{clamp(minPower, left, maxPower)}</div>
-            <div style={{ gridArea: 'right' }}>{clamp(minPower, right, maxPower)}</div>
+            <div style={{ gridArea: 'up' }}>{cleanNumber(up)}</div>
+            <div style={{ gridArea: 'down' }}>{cleanNumber(down)}</div>
+            <div style={{ gridArea: 'left' }}>{cleanNumber(left)}</div>
+            <div style={{ gridArea: 'right' }}>{cleanNumber(right)}</div>
         </NumbersWrapper>
     </NumbersSuperWrapper>
 )

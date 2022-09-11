@@ -1,4 +1,5 @@
 Nom,Tipus,Amunt,Avall,Dreta,Esquerra,Raresa
+Umbra,Animal,8,14,10,5,5
 Animal,Animal,8,4,0,5,5
 Enano,Enano,8,4,0,5,2
 Mediano,Mediano,8,4,0,5,3
