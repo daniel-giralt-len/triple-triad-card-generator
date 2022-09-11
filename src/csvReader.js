@@ -13,6 +13,7 @@ const parseCsv = csv => {
             left: parseInt(left),
             rarity: parseInt(rarity),
         }))
+        .sort((a,b) => a.name.localeCompare(b.name))
 }
 
 const getCards = () => fetch(csvPath)

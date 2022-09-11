@@ -120,17 +120,24 @@ const TypeImage = styled.img`
     padding: 3px;
 `
 
-const Type = ({ type }) => (<TypeWrapper>
-    <TypeImage src={`./data/types/${type}.png`} />
-</TypeWrapper>)
+const Type = ({ type }) => {
+    if(!type || type === ''){return}
+    return (<TypeWrapper>
+        <TypeImage src={`./data/types/${type}.png`} />
+    </TypeWrapper>)
+}
 
 const NameWrapper = styled.div`
     grid-area: name;
     display:flex;
     align-items: flex-end;
-    font-size: 1.75em;
+    font-size: ${(({small}) => small ? '1.15' : '1.5')}em;
+    overflow-wrap: break-word;
 `
-const Name = ({ name }) => (<NameWrapper>
+
+const hasLongWord = name => name.split(' ').some(w => w.length > 9)
+
+const Name = ({ name }) => (<NameWrapper small={hasLongWord(name)}>
     {name}
 </NameWrapper>)
 
@@ -140,7 +147,7 @@ const Wrapper = styled.div`
     margin-bottom: 1em;
     margin-right: 1em;
     padding: 2.5em 2em;
-    background: url(${frameImage}), url(./data/avatars/${({name})=>name.replace(/ /ig, '_')}.png);
+    background: url(${frameImage}), url("./data/avatars/${({name})=>name.replace(/ /ig, '_').replace(/"/ig, '\'')}.jpg");
     background-size: cover;
     display: inline-grid;
     column-gap: 0.25em;

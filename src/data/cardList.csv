@@ -1,19 +1,106 @@
 Nom,Tipus,Amunt,Avall,Dreta,Esquerra,Raresa
-Umbra,Animal,8,14,10,5,5
-Animal,Animal,8,4,0,5,5
-Enano,Enano,8,4,0,5,2
-Mediano,Mediano,8,4,0,5,3
-Semi-Mediano,Semi-Mediano,8,4,0,5,3
-Semi-Orco,Semi-Orco,8,4,0,5,4
-Demonio,Demonio,8,4,0,5,5
-Familiar,Familiar,8,4,0,5,1
-No-muerto,No-muerto,8,4,0,5,2
-Shifter,Shifter,8,4,0,5,3
-Dragon,Dragon,8,4,0,5,4
-Gnomo,Gnomo,8,4,0,5,5
-Semi-Elfo,Semi-Elfo,8,4,0,5,0
-Elfo,Elfo,8,4,0,5,6
-Humano,Humano,8,4,0,5,2
-Alet del Fan,Humano,1,3,4,2,1
-Gwyn,Elfo,10,10,10,10,10
-Raba,Mediano,-1,-1,-1,-1,-1
+Acyara,Elfo,2,9,2,7,2
+Aisa,Elfo,3,3,7,4,2
+Alberic,Mediano,1,2,3,14,2
+Alet del Fan,Humano,7,1,3,7,2
+Alia,Humano,3,3,6,7,2
+Anduin Von Felt,Humano,8,10,10,1,5
+Aredis,Humano,7,1,2,10,2
+Astrid d'Astralod,Elfo,3,2,7,7,2
+Azhor,Humano,5,8,1,6,2
+Basilista,Animal,1,4,6,2,1
+Bill,Gnomo,4,4,1,4,1
+Bombolla,Familiar,5,4,3,1,1
+Bronco,No-muerto,4,4,4,1,1
+Capitan Raba,Mediano,8,9,4,8,5
+Cerberon,Humano,3,8,6,2,2
+Dach,Humano,4,4,2,2,1
+Dante Alastor,Humano,10,1,4,9,4
+Dargo Von Helaw,Humano,7,1,4,1,1
+Darki,Elfo,6,6,4,10,4
+Dennis Peusvalents,Mediano,3,6,7,4,2
+DevilDarki,Demonio,8,4,10,7,5
+Dimitri Von D'or,Humano,4,5,8,1,2
+Elain,Humano,5,10,8,6,5
+Emnus Agopode,Enano,4,4,4,2,1
+Erik Darkglow,Humano,6,1,9,6,3
+Espada Vorpal +5,,1,2,1,1,1
+Favor d'en Rembrandt,,6,2,6,6,2
+Felandri,Humano,3,1,7,7,2
+Fenton Mienai,Humano,3,7,3,7,2
+Finn Ruedacolinas,Mediano,5,4,4,5,2
+Firma de Flick,,1,1,1,1,1
+Flamiis Clarobosque,Mediano,1,10,5,5,3
+Flickshade,Humano,8,6,5,6,4
+Francisco Von Pelayec,Humano,3,3,6,7,2
+Franz,Humano,5,10,9,3,5
+Galahad,Humano,4,4,4,7,2
+Galeth,Humano,10,2,4,8,4
+Garth,No-muerto,1,4,6,4,1
+Ginny,Humano,5,6,4,5,2
+Glied Löwengeist,Elfo,1,4,10,4,2
+Grunt "el amable",Enano,10,10,7,1,5
+Hadorim,,9,1,1,9,2
+Hulka,Humano,2,2,10,6,3
+Irma,No-muerto,2,8,5,5,3
+Jaspin Levan Von Duster,Semi-Mediano,4,4,4,6,2
+Jurick I,No-muerto,7,3,2,1,1
+Jurick Udagast Prime,Dragon,3,8,10,8,5
+Jurick Udagast,Humano,1,3,7,8,2
+Kal,Enano,10,4,1,4,2
+Kette,Humano,4,3,4,4,1
+Kimsey Mordenkainen,Elfo,5,5,5,3,2
+Kirei Fharma,Humano,6,7,8,7,5
+Kirtash,Elfo,3,2,3,4,1
+Kosmos Darkglow,Humano,8,5,1,6,3
+Kromm,Semi-Orco,3,5,3,3,1
+Léxatin,Elfo,7,6,5,2,2
+Lino Hojarasca,Semi-Elfo,8,4,4,2,2
+Lorel Nut,Humano,5,3,5,4,2
+Mantequilla,Animal,5,1,3,5,1
+Maravel,Humano,5,5,6,4,2
+Merche,Humano,5,4,1,5,1
+Metheril Dralin,Humano,7,1,7,5,2
+Milly Auratus,Humano,4,10,10,4,5
+Miranda,Humano,3,4,1,5,1
+Morberos Areth,No-muerto,4,8,4,2,2
+Myrthan von Federkronne,Humano,4,3,6,6,2
+Näar Siuqraam,Shifter,4,1,4,4,1
+Nieldan,Humano,5,7,7,10,5
+Òsmath,Humano,3,2,4,3,1
+Otan,Humano,7,1,9,3,3
+Parfyon Dal Solom,Elfo,4,2,4,4,1
+Pen Gwyn,Elfo,4,6,3,9,3
+Perla,Animal,4,4,3,4,1
+Pinaptenodytes,Gnomo,1,3,6,4,1
+Quasar,,1,5,5,9,2
+Quodri,Humano,7,3,5,4,2
+Raba,Mediano,5,5,5,5,3
+Rembrandt,Humano,8,9,3,6,5
+Rikel,Semi-Elfo,2,2,5,10,2
+Rodion Dal Solom,Elfo,5,4,1,3,1
+Ronco,No-muerto,3,4,5,2,1
+Ronda Fharma,Humano,4,4,5,10,4
+Salma,Humano,6,6,3,3,2
+Samael,Humano,8,7,9,1,4
+Saryon,Familiar,3,4,3,3,1
+Simkin Mordenkainen,Elfo,9,4,6,4,3
+Spar Von Bonde,Humano,4,3,1,6,1
+Sylvana Heraldsen,Elfo,4,10,4,7,4
+Thâmior Siánnodel,Humano,1,6,7,9,4
+Treya Von Felt,No-muerto,6,2,6,3,2
+Tronco,No-muerto,3,1,4,4,1
+Ulfgar Brawnanvil,Enano,8,3,3,7,3
+Umbra I,Animal,5,2,5,1,1
+Umbra II,Animal,2,7,3,6,2
+Umbra III,Animal,9,4,4,4,3
+Umbra Terrible,Animal,5,7,8,5,4
+Urza,Familiar,6,1,1,6,1
+Valna Merck,Semi-Orco,6,1,6,2,1
+Vinaeth,Elfo,10,6,10,2,5
+Vincent Stahk,Humano,6,5,10,3,4
+Worsten Nanzher,Humano,3,5,9,6,3
+Xexe,Humano,1,1,9,9,2
+Yuri Mordenkainen,Elfo,5,4,1,8,2
+Zeb,Semi-Orco,5,2,10,3,3
+Zetraxal,Humano,9,6,6,2,4
